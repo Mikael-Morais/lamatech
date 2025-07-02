@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LamaTech - Laboratório de Matemática e Tecnologia</title>
+    
+    <link rel="stylesheet" href="css/home.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">LamaTech</a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Aulas</a></li>
+                    <li><a href="">Publicações</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <i class='bx bx-menu'></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1>Laboratório de Matemática e Tecnologia - UFMA</h1>
+                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2 class="animate-on-scroll">O Laboratório</h2>
+                <p class="animate-on-scroll">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <div class="quick-links-grid">
+                    <a href="" class="link-card animate-on-scroll">
+                        <h3>Sobre o LamaTech</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <span>Conheça &rarr;</span>
+                    </a>
+                    <a href="" class="link-card animate-on-scroll">
+                        <h3>Aulas</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <span>Acesse &rarr;</span>
+                    </a>
+                    <a href="" class="link-card animate-on-scroll">
+                        <h3>Publicações</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <span>Leia &rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                 <div class="footer-col">
+                    <h4>LamaTech</h4>
+                    <p>Laboratório de Matemática e Tecnologia</p>
+                    <p>Universidade Federal do Maranhão (UFMA)</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <p>Av. dos Portugueses, 1966, Bacanga</p>
+                    <p>São Luís, MA - Brasil</p>
+                    <p>Email: <a href="mailto:lamatech@ufma.br">lamatech@ufma.br</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="https://portalpadrao.ufma.br/">Portal da UFMA</a></li>
+                        <li><a href="https://sigaa.ufma.br/sigaa/public/home.jsf">SIGAA</a></li>
+                        <li><a href="https://www.periodicos.capes.gov.br/">Periódicos CAPES</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LamaTech - UFMA.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+    <script>
+        const animatedElements = document.querySelectorAll('.animate-on-scroll');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        animatedElements.forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+
+</body>
+</html>
