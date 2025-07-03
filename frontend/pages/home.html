@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LamaTech - Laboratório de Matemática e Tecnologia</title>
-    
-    <link rel="stylesheet" href="./css/style.css"> 
+
+    <link rel="stylesheet" href="./src/css/base.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
 
     <header class="main-header">
@@ -36,28 +38,64 @@
         <section class="hero-section">
             <div class="container">
                 <h1> Laboratório de Matemática e Tecnologia - UFMA</h1>
-                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</p>
             </div>
         </section>
 
         <section class="content-section">
             <div class="container">
                 <h2 class="animate-on-scroll">O Laboratório</h2>
-                <p class="animate-on-scroll">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p class="animate-on-scroll">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 <div class="quick-links-grid">
                     <a href="" class="link-card animate-on-scroll">
                         <h3>Sobre o LamaTech</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
                         <span>Conheça &rarr;</span>
                     </a>
                     <a href="" class="link-card animate-on-scroll">
                         <h3>Aulas</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
                         <span>Acesse &rarr;</span>
                     </a>
                     <a href="" class="link-card animate-on-scroll">
                         <h3>Publicações</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <span>Leia &rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="content-section">
+            <div class="container">
+                <h2 class="animate-on-scroll">O Laboratório</h2>
+                <p class="animate-on-scroll">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <div class="quick-links-grid">
+                    <a href="" class="link-card animate-on-scroll">
+                        <h3>Sobre o LamaTech</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <span>Conheça &rarr;</span>
+                    </a>
+                    <a href="" class="link-card animate-on-scroll">
+                        <h3>Aulas</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <span>Acesse &rarr;</span>
+                    </a>
+                    <a href="" class="link-card animate-on-scroll">
+                        <h3>Publicações</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
                         <span>Leia &rarr;</span>
                     </a>
                 </div>
@@ -68,7 +106,7 @@
     <footer class="main-footer">
         <div class="container">
             <div class="footer-content">
-                 <div class="footer-col">
+                <div class="footer-col">
                     <h4>LamaTech</h4>
                     <p>Laboratório de Matemática e Tecnologia</p>
                     <p>Universidade Federal do Maranhão (UFMA)</p>
@@ -94,30 +132,13 @@
         </div>
     </footer>
 
-    <script>
+    <script src="./src/js/scroll.js">
         const menuToggle = document.querySelector('.menu-toggle');
         const navLinks = document.querySelector('.nav-links');
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
     </script>
-
-    <script>
-        const animatedElements = document.querySelectorAll('.animate-on-scroll');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, {
-            threshold: 0.1
-        });
-        animatedElements.forEach(element => {
-            observer.observe(element);
-        });
-    </script>
-
 </body>
+
 </html>

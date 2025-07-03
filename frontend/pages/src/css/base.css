@@ -10,7 +10,9 @@
 }
 
 /* reset basico */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -34,14 +36,28 @@ body {
     padding: 0 1rem;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-weight: 600;
     line-height: 1.3;
 }
 
-h1 { font-size: 2.8rem; color: var(--primary-text-color); }
-h2 { font-size: 2.2rem; color: var(--primary-color); }
-h3 { font-size: 1.4rem; color: var(--primary-text-color); }
+h1 {
+    font-size: 2.8rem;
+    color: var(--primary-text-color);
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: var(--primary-text-color);
+}
 
 a {
     color: var(--primary-color);
@@ -63,7 +79,7 @@ a:hover {
     top: 0;
     z-index: 1000;
     width: 100%;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .main-header .container {
@@ -77,6 +93,7 @@ a:hover {
     font-weight: 700;
     color: var(--primary-color);
 }
+
 .logo:hover {
     filter: brightness(1.2);
 }
@@ -89,7 +106,7 @@ a:hover {
 
 .main-nav a {
     color: var(--secondary-text-color);
-    font-weight: 500;
+    font-weight: 600;
     padding-bottom: 5px;
 }
 
@@ -114,6 +131,7 @@ a:hover {
     text-align: center;
     padding: 5rem 1rem;
 }
+
 .hero-section .subtitle {
     font-size: 1.15rem;
     color: var(--secondary-text-color);
@@ -124,11 +142,13 @@ a:hover {
 .content-section {
     padding: 5rem 0;
 }
+
 .content-section h2 {
     text-align: center;
     margin-bottom: 1rem;
 }
-.content-section > .container > p {
+
+.content-section>.container>p {
     max-width: 800px;
     margin: 0 auto 3.5rem auto;
     text-align: center;
@@ -151,17 +171,21 @@ a:hover {
     text-align: left;
     transition: all 0.3s ease-in-out;
 }
+
 .link-card:hover {
     box-shadow: 0 10px 30px rgba(106, 62, 189, 0.1);
     border-color: var(--primary-color);
 }
+
 .link-card h3 {
     margin-bottom: 1rem;
 }
+
 .link-card p {
     color: var(--secondary-text-color);
     margin-bottom: 1.5rem;
 }
+
 .link-card span {
     font-weight: 600;
 }
@@ -172,13 +196,16 @@ a:hover {
     color: rgba(255, 255, 255, 0.8);
     padding: 3.5rem 0 2rem 0;
 }
+
 .main-footer h4 {
     color: var(--background-color);
     margin-bottom: 1rem;
 }
+
 .main-footer a {
     color: rgba(255, 255, 255, 0.8);
 }
+
 .main-footer a:hover {
     color: #ffffff;
     text-decoration: underline;
@@ -191,14 +218,17 @@ a:hover {
     gap: 2rem;
     padding-bottom: 2rem;
 }
+
 .footer-col {
     flex: 1;
     min-width: 220px;
 }
+
 .footer-col ul {
     list-style: none;
     padding: 0;
 }
+
 .footer-col li {
     margin-bottom: 0.5rem;
 }
@@ -231,9 +261,13 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-    html { font-size: 15px; }
+    html {
+        font-size: 15px;
+    }
 
-    h1 { font-size: 2.2rem; }
+    h1 {
+        font-size: 2.2rem;
+    }
 
     .menu-toggle {
         display: block;
@@ -244,7 +278,7 @@ a:hover {
         visibility: hidden;
         transform: translateY(-10px);
         transition: opacity 0.3s ease-out, transform 0.3s ease-out, visibility 0.3s;
-        
+
         display: flex;
         flex-direction: column;
         gap: 0;
@@ -253,7 +287,7 @@ a:hover {
         left: 0;
         width: 100%;
         background-color: var(--background-color);
-        box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
         border-top: 1px solid var(--border-color);
     }
 
@@ -262,13 +296,13 @@ a:hover {
         visibility: visible;
         transform: translateY(0);
     }
-    
+
     .main-nav li {
         text-align: center;
         width: 100%;
         border-bottom: 1px solid #f0f0f0;
     }
-    
+
     .main-nav a {
         display: block;
         width: 100%;
