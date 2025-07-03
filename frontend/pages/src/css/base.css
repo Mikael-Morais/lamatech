@@ -28,6 +28,13 @@ body {
     color: var(--primary-text-color);
     line-height: 1.6;
     background-color: var(--background-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 .container {
