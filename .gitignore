@@ -1,0 +1,16 @@
+# dependências
+node_modules/
+
+# logs
+logs/
+*.log
+
+# ambiente
+.env
+
+# arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# arquivos do VSCode
+.vscode/
