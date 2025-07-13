@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LamaTech - Laboratório de Matemática e Tecnologia</title>
 
     <link rel="stylesheet" href="./src/css/base.css">
+    <link rel="stylesheet" href="./src/css/login.css">
     <link rel="shortcut icon" href="./src/img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
+
     <header class="main-header">
         <div class="container">
             <a href="home.html" class="logo">LamaTech</a>
@@ -24,14 +28,34 @@
                     <li><a href="">Curiosidades Matemáticas</a></li>
                     <li><a href="blog.html">Publicações</a></li>
                     <li><a href="login.html">Login</a></li>
+
                 </ul>
             </nav>
-        </header>
-    <main>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <i class='bx bx-menu'></i>
+            </button>
+        </div>
+    </header>
 
+    <main>  
+    
+     <div class="login-wrapper">
+        <div class="image-side">
+     <img src="./src/img/lamatec.jpg" alt="Imagem representando matemática e tecnologia" />
+     </div>
+   <div class="login-container">
+    <h1>Bem-vindo ao Lamatech</h1>
+    <form>
+      <input type="text" placeholder="Usuário" required />
+      <input type="password" placeholder="Senha" required />
+      <button type="submit">Entrar</button>
+    </form>
+            </div>
+        </div>
+    </div>
     </main>
-        
-    <footer class="main-footer">
+
+     <footer class="main-footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-col">
@@ -59,5 +83,14 @@
             </div>
         </div>
     </footer>
+
+    <script src="./src/js/scroll.js">
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
+
 </html>
