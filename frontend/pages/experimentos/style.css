@@ -1,0 +1,21 @@
+@import url('../css/main.css'); /* Opcional: puxa as variáveis do main.css */
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--light-gray-bg);
+    color: var(--primary-text-color);
+}
+
+.experimento {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+}
+
+h1, h2 {
+    color: var(--primary-color);
+}
+
+.botao {
+    background-color: var(--primary-color);
+    color: white;
+}
