@@ -7,9 +7,12 @@
     <title>LamaTech - Aulas</title>
 
     <link rel="stylesheet" href="../src/css/base.css">
+    <link rel="stylesheet" href="../src/css/aulas.css">
+    <link rel="shortcut icon" href="./src/img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -19,11 +22,12 @@
             <a href="index.html" class="logo">LamaTech</a>
             <nav class="main-nav">
                 <ul class="nav-links">
-                    <li><a href="../home.html" class="active">Home</a></li>
+                    <li><a href="home.html">Home</a></li>
                     <li><a href="">Sobre</a></li>
-                    <li><a href="">Aprenda Mais</a></li>
+                    <li><a href="" class="active">Aprenda Mais</a></li>
                     <li><a href="">Curiosidades Matemáticas</a></li>
-                    <li><a href="">Publicações</a></li>
+                    <li><a href="blog.html">Publicações</a></li>
+                    <li><a href="login.html">Login</a></li>
 
                 </ul>
             </nav>
@@ -40,6 +44,76 @@
             navLinks.classList.toggle('active');
         });
     </script>
+
+    <div class="center">
+        <h2>Selecione um Conteúdo</h2>
+        <div class="grid-container">
+            <div class="card">
+                <span class="material-icons">calculate</span>
+                <p>Cálculo</p>
+            </div>
+            <div class="card">
+                <span class="material-icons">straighten</span>
+                <p>Geometria</p>
+            </div>
+            <div class="card">
+                <span class="material-icons">view_in_ar</span>
+                <p>Geometria Espacial</p>
+            </div>
+            <div class="card selected">
+                <span class="material-icons">computer</span>
+                <p>Informática Básica</p>
+            </div>
+            <div class="card">
+                <span class="material-icons">device_hub</span>
+                <p>Matemática Discreta</p>
+            </div>
+            <div class="card">
+                <span class="material-icons">science</span>
+                <p>Métodos Científicos</p>
+            </div>
+            <div class="card">
+                <span class="material-icons">functions</span>
+                <p>Modelagem Matemática</p>
+            </div>
+            <div class="card">
+                <span class="material-icons">percent</span>
+                <p>Probabilidade</p>
+            </div>
+            <div class="card">
+                <span class="material-icons">code</span>
+                <p>Lógica de Programação</p>
+            </div>
+        </div>
+    </div>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>LamaTech</h4>
+                    <p>Laboratório de Matemática e Tecnologia</p>
+                    <p>Universidade Federal do Maranhão (UFMA)</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <p>Av. dos Portugueses, 1966, Bacanga</p>
+                    <p>São Luís, MA - Brasil</p>
+                    <p>Email: <a href="mailto:lamatech@ufma.br">lamatech@ufma.br</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="https://portalpadrao.ufma.br/">Portal da UFMA</a></li>
+                        <li><a href="https://sigaa.ufma.br/sigaa/public/home.jsf">SIGAA</a></li>
+                        <li><a href="https://www.periodicos.capes.gov.br/">Periódicos CAPES</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LamaTech - UFMA.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

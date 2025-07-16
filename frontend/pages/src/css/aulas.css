@@ -1,0 +1,71 @@
+:root {
+    --primary-color: #6A3EBD;
+    --dark-purple-bg: #2a0a57;
+    --primary-text-color: #212529;
+    --secondary-text-color: #6c757d;
+    --background-color: #ffffff;
+    --light-gray-bg: #f8f9fa;
+    --border-color: #dee2e6;
+    --main-font: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--light-gray-bg);
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 5rem;
+
+    & h2 {
+        text-align: center;
+        margin: 2.5rem auto;
+    }
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.card {
+    background: var(--background-color);
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px 10px;
+    transition: 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.card .material-icons {
+    font-size: 36px;
+    color: var(--secondary-text-color);
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin: 0;
+    font-weight: bold;
+    color: var(--primary-text-color);
+}
+
+.card:hover {
+    transition: 300ms;
+    transform: translateY(3px);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    box-shadow: 0 4px 10px rgba(126, 87, 194, 0.2);
+}
+
+.card:hover .material-icons {
+    color: var(--primary-color);
+}
